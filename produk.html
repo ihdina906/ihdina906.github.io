@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi Produk | Rempah Sore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topline">
+  A LITTLE PAUSE, A NATURAL GLOW
+</div>
+
+<header>
+  <nav class="nav">
+
+    <a class="logo" href="index.html">
+      Rempah Sore
+      <small>BOTANICAL BEAUTY RITUAL</small>
+    </a>
+
+    <div class="navlinks">
+      <a href="index.html">Beranda</a>
+      <a href="home.html">Cerita</a>
+      <a href="profil.html">Tentang</a>
+      <a class="active" href="produk.html">Produk</a>
+      <a href="supplier.html">Supplier</a>
+      <a href="toko-cabang.html">Cabang</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+
+  </nav>
+</header>
+
+<section class="page-banner">
+  <div class="eyebrow">OUR COLLECTION</div>
+  <h1>Koleksi perawatan.</h1>
+  <p>Rawat diri dengan sentuhan tradisi Nusantara.</p>
+</section>
+
+<main class="section">
+  <div class="wrap">
+
+    <div class="eyebrow">THE COLLECTION</div>
+    <h2 class="section-title">Pilih ritualmu.</h2>
+
+    <p class="lead">
+      Temukan rangkaian perawatan yang sesuai dengan kebutuhanmu.
+    </p>
+
+    <!-- TOMBOL KATEGORI -->
+    <div class="filters">
+
+      <button class="filter active"
+      onclick="filterProduk('semua', this)">
+        Semua produk
+      </button>
+
+      <button class="filter"
+      onclick="filterProduk('wajah', this)">
+        Wajah
+      </button>
+
+      <button class="filter"
+      onclick="filterProduk('badan', this)">
+        Badan
+      </button>
+
+      <button class="filter"
+      onclick="filterProduk('rambut', this)">
+        Rambut
+      </button>
+
+      <button class="filter"
+      onclick="filterProduk('mandi', this)">
+        Mandi
+      </button>
+
+    </div>
+
+    <!-- DAFTAR PRODUK -->
+    <div class="catalog">
+
+      <!-- WAJAH: 3 PRODUK -->
+
+      <article class="card" data-kategori="wajah">
+        <img src="images/wajah1.jpg" alt="Lulur Muka Rempah">
+        <div class="card-label">SIGNATURE • FACE</div>
+        <h3>Lulur Muka Beras</h3>
+        <p>Perawatan wajah terinspirasi dari tradisi.</p>
+        <div class="price">Rp45.000</div>
+      </article>
+
+      <article class="card" data-kategori="wajah">
+        <img src="images/wajah2.jpg" alt="Lulur Muka Kunyit">
+        <div class="card-label">FACE CARE</div>
+        <h3>Lulur Muka Kunyit</h3>
+        <p>Sentuhan rempah untuk ritual wajah.</p>
+        <div class="price">Rp48.000</div>
+      </article>
+
+      <article class="card" data-kategori="wajah">
+        <img src="images/wajah3.jpg" alt="Lulur Muka Bengkoang">
+        <div class="card-label">FACE CARE</div>
+        <h3>Lulur Muka Bengkoang</h3>
+        <p>Inspirasi perawatan wajah tradisional.</p>
+        <div class="price">Rp50.000</div>
+      </article>
+
+
+      <!-- BADAN: 2 PRODUK -->
+
+      <article class="card" data-kategori="badan">
+        <img src="images/badan1.jpg" alt="Lulur Badan Rempah">
+        <div class="card-label">SIGNATURE • BODY</div>
+        <h3>Lulur Badan Rempah</h3>
+        <p>Ritual perawatan tubuh bernuansa tradisional.</p>
+        <div class="price">Rp60.000</div>
+      </article>
+
+      <article class="card" data-kategori="badan">
+        <img src="images/badan2.jpg" alt="Lulur Badan Kopi">
+        <div class="card-label">BODY CARE</div>
+        <h3>Lulur Badan Kopi</h3>
+        <p>Perawatan tubuh dengan inspirasi kopi.</p>
+        <div class="price">Rp58.000</div>
+      </article>
+
+
+      <!-- RAMBUT: 3 PRODUK -->
+
+      <article class="card" data-kategori="rambut">
+        <img src="images/rambut1.jpg" alt="Lulur Rambut Rempah">
+        <div class="card-label">SIGNATURE • HAIR</div>
+        <h3>Lulur Rambut Kemiri</h3>
+        <p>Inspirasi perawatan rambut dari bahan tradisional.</p>
+        <div class="price">Rp55.000</div>
+      </article>
+
+      <article class="card" data-kategori="rambut">
+        <img src="images/rambut2.jpg" alt="Lulur Rambut Lidah Buaya">
+        <div class="card-label">HAIR CARE</div>
+        <h3>Lulur Rambut Lidah Buaya</h3>
+        <p>Ritual perawatan rambut dengan sentuhan herbal.</p>
+        <div class="price">Rp57.000</div>
+      </article>
+
+      <article class="card" data-kategori="rambut">
+        <img src="images/rambut3.jpg" alt="Lulur Rambut Urang Aring">
+        <div class="card-label">HAIR CARE</div>
+        <h3>Lulur Rambut Urang Aring</h3>
+        <p>Terinspirasi dari perawatan rambut Nusantara.</p>
+        <div class="price">Rp59.000</div>
+      </article>
+
+
+      <!-- MANDI: 5 PRODUK -->
+
+      <article class="card" data-kategori="mandi">
+        <img src="images/mandi1.jpg" alt="Mandi Bunga Mawar">
+        <div class="card-label">BATH RITUAL</div>
+        <h3>Mandi Bunga Mawar</h3>
+        <p>Ritual mandi dengan sentuhan bunga.</p>
+        <div class="price">Rp50.000</div>
+      </article>
+
+      <article class="card" data-kategori="mandi">
+        <img src="images/mandi2.jpg" alt="Mandi Bunga Melati">
+        <div class="card-label">BATH RITUAL</div>
+        <h3>Mandi Bunga Melati</h3>
+        <p>Inspirasi mandi bunga bernuansa lembut.</p>
+        <div class="price">Rp52.000</div>
+      </article>
+
+      <article class="card" data-kategori="mandi">
+        <img src="images/mandi3.jpg" alt="Mandi Rempah">
+        <div class="card-label">BATH RITUAL</div>
+        <h3>Mandi Rempah</h3>
+        <p>Perpaduan inspirasi rempah tradisional.</p>
+        <div class="price">Rp55.000</div>
+      </article>
+
+      <article class="card" data-kategori="mandi">
+        <img src="images/mandi4.jpg" alt="Mandi Bunga Kenanga">
+        <div class="card-label">BATH RITUAL</div>
+        <h3>Mandi Bunga Kenanga</h3>
+        <p>Rangkaian bunga untuk waktu bersantai.</p>
+        <div class="price">Rp53.000</div>
+      </article>
+
+      <article class="card" data-kategori="mandi">
+        <img src="images/mandi5.jpg" alt="Mandi Bunga Nusantara">
+        <div class="card-label">SPECIAL COLLECTION</div>
+        <h3>Mandi Bunga Nusantara</h3>
+        <p>Perpaduan bunga dalam satu ritual mandi.</p>
+        <div class="price">Rp65.000</div>
+      </article>
+
+    </div>
+
+    <p class="muted" style="font-size:10px;margin-top:20px">
+      *Nama produk dan harga merupakan contoh dan dapat disesuaikan.
+    </p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <a class="logo" href="index.html">
+      Rempah Sore
+      <small>BOTANICAL BEAUTY RITUAL</small>
+    </a>
+    <p>Terinspirasi tradisi, diracik untuk hari ini. © 2026</p>
+  </div>
+</footer>
+
+
+<!-- FITUR FILTER PRODUK -->
+<script>
+
+function filterProduk(kategori, tombol) {
+
+  const produk = document.querySelectorAll(
+    '.catalog .card'
+  );
+
+  const tombolFilter = document.querySelectorAll(
+    '.filter'
+  );
+
+  produk.forEach(function(item) {
+
+    if (
+      kategori === 'semua' ||
+      item.dataset.kategori === kategori
+    ) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+
+  });
+
+  tombolFilter.forEach(function(btn) {
+    btn.classList.remove('active');
+  });
+
+  tombol.classList.add('active');
+
+}
+
+</script>
+
+</body>
+</html>
